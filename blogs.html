@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
+    <!-- tailwind and daisy ui links -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>This is Blog Section</h1>
+    <h1 class="text-3xl font-bold text-center mt-8">Important FAQ</h1>
+    <div class="p-20">
+        <!-- FAQ -->
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each node is an element, attribute, or piece of text. This allows developers to manipulate the content, structure, and style of web pages dynamically using scripts like JavaScript. Essentially, the DOM connects web pages to programming languages, enabling interactive and dynamic web experiences.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>To select an element from the DOM, you can use different methods. For instance, you might want to grab an element based on its unique ID, its class, or even its tag name. For more complex needs, you can utilize CSS-style selectors to fetch exactly what you need. These techniques let you access and manipulate the elements within a web page seamlessly.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+              <div class="collapse-content">
+                <p>Event delegation in the DOM context is a technique where a single event listener is added to a parent element instead of multiple listeners to individual child elements. This is useful because it makes the code more efficient and easier to manage, especially when dealing with dynamic elements that might be added or removed from the DOM. By leveraging event delegation, you can handle events more efficiently and improve the performance of your web applications.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+              <div class="collapse-content">
+                <p>To manipulate an element's attributes and styles using the DOM, you directly access and modify the properties of the element through JavaScript. For attributes, you can set or change values like the src of an image or the href of a link. For styles, you can adjust CSS properties, such as changing the color, size, or visibility of an element. This allows you to dynamically update the appearance and behavior of web page elements to create interactive and engaging user experiences.</p>
+              </div>
+            </div>
+          </div>
+    </div>
 </body>
 </html>
