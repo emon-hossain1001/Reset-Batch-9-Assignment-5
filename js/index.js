@@ -31,14 +31,31 @@ document.getElementById('blog-btn').addEventListener('click', ()=>{
 })
 
 // Donate Now Button Functionalities
-function donateNow(inputId, balance){
+function donateNow(inputId, balance, text){
     const input = getInputValue(inputId);
     const totalBalance = document.getElementById('total-balance');
     const totalBalanceValue = Number(totalBalance.innerText);
+    if(input < 0 || input === "" || input > totalBalanceValue || isNaN(input)){
+        alert("Invalid Donation Amount");
+        input = 0;
+    }
     totalBalance.innerText = totalBalanceValue-input;
     const cardBalance = document.getElementById(balance);
     const cardBalanceValue = Number(cardBalance.innerText);
     cardBalance.innerText = cardBalanceValue + input;
+
+    // History section
+    const date = new Date();
+    const dateString = date.toString();
+
+    const donateText = document.getElementById(text).innerText;
+    const historyCard = document.getElementById('history');
+    historyCard.innerHTML += `
+        <div class="border rounded-xl p-4 m-5">
+            <h2 class="font-bold text-xl">${input} Taka is ${donateText}</h2>
+            <p>Date : ${dateString}</p>
+        </div>
+    `; 
 }
 
 // input text

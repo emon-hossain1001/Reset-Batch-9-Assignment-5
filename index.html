@@ -50,14 +50,14 @@
                         <img class="w-5" src="./assets/coin.png" alt="">
                         <span id="card-1-balance">0</span> BDT
                     </button>
-                    <h2 class="text-xl font-bold text-[rgb(17,17,17)]">
+                    <h2 id="card-1-text" class="text-xl font-bold text-[rgb(17,17,17)]">
                         Donate for Flood at Noakhali, Bangladesh
                     </h2>
                     <p class="text-[rgba(17,17,17,0.7)]">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
                     <input id="card-1-input" class="input input-bordered w-full" type="text" placeholder="Write Donation Amount">
-                    <button onclick="donateNow('card-1-input','card-1-balance')" class="w-full py-3 bg-[rgb(180,244,97)] rounded-lg text-xl text-[rgb(17,17,17)] font-semibold">
+                    <button onclick="donateNow('card-1-input','card-1-balance','card-1-text'), my_modal_5.showModal()" class="w-full py-3 bg-[rgb(180,244,97)] rounded-lg text-xl text-[rgb(17,17,17)] font-semibold">
                         Donate Now
                     </button>
                  </div>
@@ -74,14 +74,14 @@
                         <img class="w-5" src="./assets/coin.png" alt="">
                         <span id="card-2-balance">600</span> BDT
                     </button>
-                    <h2 class="text-xl font-bold text-[rgb(17,17,17)]">
+                    <h2 id="card-2-text" class="text-xl font-bold text-[rgb(17,17,17)]">
                         Donate for Flood Relief in Feni,Bangladesh
                     </h2>
                     <p class="text-[rgba(17,17,17,0.7)]">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
                     <input id="card-2-input" class="input input-bordered w-full" type="text" placeholder="Write Donation Amount">
-                    <button onclick="donateNow('card-2-input','card-2-balance')" id="card-2-btn" class="w-full py-3 bg-[rgb(180,244,97)] rounded-lg text-xl text-[rgb(17,17,17)] font-semibold">
+                    <button onclick="donateNow('card-2-input','card-2-balance','card-2-text'), my_modal_5.showModal()" id="card-2-btn" class="w-full py-3 bg-[rgb(180,244,97)] rounded-lg text-xl text-[rgb(17,17,17)] font-semibold">
                         Donate Now
                     </button>
                  </div>
@@ -98,22 +98,38 @@
                         <img class="w-5" src="./assets/coin.png" alt="">
                         <span id="card-3-balance">2400</span> BDT
                     </button>
-                    <h2 class="text-xl font-bold text-[rgb(17,17,17)]">
+                    <h2 id="card-3-text" class="text-xl font-bold text-[rgb(17,17,17)]">
                         Aid for Injured in the Quota Movement
                     </h2>
                     <p class="text-[rgba(17,17,17,0.7)]">
                         The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                     </p>
                     <input id="card-3-input" class="input input-bordered w-full" type="text" placeholder="Write Donation Amount">
-                    <button onclick="donateNow('card-3-input','card-3-balance')" id="card-3-btn" class="w-full py-3 bg-[rgb(180,244,97)] rounded-lg text-xl text-[rgb(17,17,17)] font-semibold">
+                    <button onclick="donateNow('card-3-input','card-3-balance','card-2-text'), my_modal_5.showModal()" id="card-3-btn" class="w-full py-3 bg-[rgb(180,244,97)] rounded-lg text-xl text-[rgb(17,17,17)] font-semibold">
                         Donate Now
                     </button>
                  </div>
              </div>
         </div>
+        <!-- Modal section -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box flex flex-col justify-center items-center gap-1">
+            <h3 class="text-3xl font-bold mb-4">Congrats!</h3>
+            <img src="./assets/coin.png" alt="">
+            <p class="py-4">You Have Donated For Humankind</p>
+            <h2 class="text-2xl font-bold">Successfully</h2>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">close confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
         <!-- History Section -->
          <section id="history-section" class="hidden">
-            <h1 class="text-center text-5xl font-bold">This is history section</h1>
+            <div id="history" class="">
+                
+            </div>
          </section>
     </main>
     <script src="./js/index.js"></script>
