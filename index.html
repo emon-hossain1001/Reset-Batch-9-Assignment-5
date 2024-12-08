@@ -29,15 +29,15 @@
     <main>
         <!-- Donation and History Buttons -->
         <div class="flex justify-center items-center gap-3 my-12">
-            <button class="font-bold px-8 py-2 rounded-lg bg-[rgb(180,244,97)] text-[rgb(17,17,17)]">
+            <button id="donation-btn" class="font-bold px-8 py-2 rounded-lg bg-[rgb(180,244,97)] hover:bg-[rgb(180,244,97)] border">
                 Donation
             </button>
-            <button class="font-bold px-8 py-2 rounded-lg border text-[rgba(17,17,17,0.7)]">
+            <button id="history-btn" class="font-bold px-8 py-2 rounded-lg border hover:bg-[rgb(180,244,97)]">
                 History
             </button>
          </div>
          <!-- Card Container -->
-        <div class="max-w-6xl mx-auto my-24 px-4 md:px-2 space-y-5">
+        <div id="card-section" class="max-w-6xl mx-auto my-24 px-4 md:px-2 space-y-5">
             <!-- card 1 -->
              <div class="grid md:grid-cols-2 gap-8 items-center rounded-2xl border border-[rgba(17,17,17,0.1)] p-4">
                 <!-- Image -->
@@ -111,6 +111,10 @@
                  </div>
              </div>
         </div>
+        <!-- History Section -->
+         <section id="history-section" class="hidden">
+            <h1 class="text-center text-5xl font-bold">This is history section</h1>
+         </section>
     </main>
     <script src="./js/index.js"></script>
 </body>
