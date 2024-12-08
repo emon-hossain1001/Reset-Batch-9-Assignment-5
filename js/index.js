@@ -35,7 +35,7 @@ function donateNow(inputId, balance, text){
     const input = getInputValue(inputId);
     const totalBalance = document.getElementById('total-balance');
     const totalBalanceValue = Number(totalBalance.innerText);
-    if(input < 0 || input === "" || input > totalBalanceValue || isNaN(input)){
+    if(input < 0 || input === 0 || input > totalBalanceValue || isNaN(input)){
         alert("Invalid Donation Amount");
         input = 0;
     }
